@@ -25,14 +25,25 @@
             animation: fadeIn 2s ease-in-out;
             position: relative;
         }
+        .card {
+        border: 1px solid #00aaff;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        }
+
+        .card:hover {
+        background: #0a2a43;
+        }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #00aaff;
-            position: absolute;
-            top: -75px;
+            position: relative;
+            top: -30px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -102,13 +113,24 @@
         border: 4px solid #00aaff;
         max-width: 100%;
         }
+        #habilidades ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        #habilidades ul li {
+        background: #0a2a43;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 5px;
+        display: inline-block;
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#sobremí" aria-label="Sobre mí">Sobre mí</a></li>
-            <li><a href="#educacion"aria-label="educacion">Educación</a></li>
+            <li><a href="#educacion" aria-label="educacion">Educación</a></li>
             <li><a href="#habilidades" aria-label="Habilidades">Habilidades</a></li>
             <li><a href="#proyectos" aria-label="Proyectos">Proyectos</a></li>
             <li><a href="#contacto" aria-label="Contacto">Contacto</a></li>
@@ -125,15 +147,15 @@
     </section>
     <section id="educacion">
         <h2>FORMACION EDUCATIVA</h2>
-        <div class="proyectos">
+        <div class="card">
             <h3>ING. DE SISTEMAS - UNIVERSIDAD CONTINENTAL</h3>
             <p>Actualmente estoy estudiando la carrera de Ing. de Sistemas en la Universidad Continental.</p>
         </div>
-        <div class="proyectos">
-            <h3>TÉCNICO EN COMPUTACIÓN E INFORMÁTICA - I.E.S.T.P. "ANDRÉS A. CÁCERES D</h3>
+        <div class="card">
+            <h3>TÉCNICO EN COMPUTACIÓN E INFORMÁTICA - I.E.S.T.P. "ANDRÉS A. CÁCERES D"</h3>
             <p>Instalación, configuración y mantenimiento de hardware y software, la gestión de redes y sistemas operativos, la seguridad informática y el soporte técnico a usuarios.</p>
         </div>
-        <div class="proyectos">
+        <div class="card">
             <h3>LABORATORISTA DE SUELOS - SENCICO</h3>
             <p>Responsable de analizar las propiedades físicas y mecánicas del suelo para garantizar su idoneidad en proyectos de construcción e infraestructura. </p>
         </div>
@@ -150,30 +172,30 @@
     </section>
     <section id="proyectos">
         <h2>EXPERIENCIA PROFESIONAL</h2>
-        <div class="proyectos">
+        <div class="card">
             <h3>OBRA HIDRAULICA - PRESA LOS LOROS</h3>
             <p>Como responsable del laboratorio de suelos en una obra hidráulica, mi labor consiste en la recopilación, análisis y gestión sistemática de datos geotécnicos para garantizar la estabilidad y seguridad de las estructuras. Utilizo herramientas digitales y bases de datos para el monitoreo en tiempo real de las características del suelo, asegurando que los parámetros cumplen con los estándares de calidad y normativas vigentes. Además, implemento modelos de simulación y reportes automatizados para optimizar la toma de decisiones en el proceso constructivo.</p>
         </div>
-        <div class="proyectos">
+        <div class="card">
             <h3>UNNA INFRAESTRUCTURA</h3>
             <p>En una obra de infraestructura, la Ingeniería de Sistemas desempeña un papel clave en la gestión y optimización de procesos mediante la implementación de software especializado, sensores IoT y modelos de simulación. Esto permite el monitoreo en tiempo real del avance de la obra, la administración eficiente de recursos y la detección temprana de posibles riesgos. Asimismo, se desarrollan plataformas digitales para la recopilación y análisis de datos estructurales, facilitando la toma de decisiones estratégicas y asegurando el cumplimiento de normativas de calidad y seguridad.</p>
         </div>
-        <div class="proyectos">
+        <div class="card">
             <h3>CONSORCIO CHINCHEROS - AEROPUERTO INTERNACIONAL</h3>
             <p>implementación de herramientas digitales para el monitoreo de avances, control de calidad del suelo y optimización del uso de maquinaria. Se emplean sensores IoT y sistemas GIS para registrar en tiempo real la compactación, nivelación y humedad del terreno, garantizando el cumplimiento de especificaciones técnicas. </p>
         </div>
     </section>
-    <section id="proyectos">
+    <section id="certificaciones">
         <h2>CERTIFICACIONES</h2>
-        <div class="proyectos">
+        <div class="card">
             <h3>Seguridad y Salud en el Trabajo es la ISO 45001:2018</h3>
             <p>establece los requisitos para un sistema de gestión de la seguridad y salud ocupacional, ayudando a reducir riesgos laborales y mejorar el bienestar de los trabajadores.</p>
         </div>
-        <div class="proyectos">
+        <div class="card">
             <h3>Microsoft Office Specialist (MOS) Excel Expert</h3>
             <p>habilidades avanzadas en el uso de Excel para análisis de datos, reportes y gestión de proyectos en construcción.</p>
         </div>
-        <div class="proyectos">
+        <div class="card">
             <h3>CompTIA Server+</h3>
             <p>valida conocimientos en administración, mantenimiento y solución de problemas en servidores y sistemas TI. </p>
         </div>
