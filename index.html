@@ -1,3 +1,4 @@
+<meta name="description" content="Portafolio de Edgar Moya Coasaca - Ingeniero de Sistemas, Desarrollador Web e Innovador.">
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,6 +13,8 @@
             background-color: #1c3b57;
             color: #fff;
             scroll-behavior: smooth;
+            display: flex;
+            flex-wrap: wrap;
         }
         header {
             background: linear-gradient(90deg, #0a192f, #1c3b57);
@@ -73,14 +76,14 @@
         section:hover {
             transform: scale(1.05);
         }
-        .project {
+        .proyectos {
             border: 1px solid #00aaff;
             padding: 10px;
             margin-top: 10px;
             border-radius: 5px;
             transition: background 0.3s ease;
         }
-        .project:hover {
+        .proyectos:hover {
             background: #0a2a43;
         }
         footer {
@@ -89,16 +92,26 @@
             background: #0a192f;
             color: white;
             margin-top: 20px;
+            position: relative;
+        }
+        .sidebar img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #00aaff;
+        max-width: 100%;
         }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#sobremí" aria-label="Sobre mí">Sobre mí</a></li>
+            <li><a href="#educacion"aria-label="educacion">Educación</a></li>
+            <li><a href="#habilidades" aria-label="Habilidades">Habilidades</a></li>
+            <li><a href="#proyectos" aria-label="Proyectos">Proyectos</a></li>
+            <li><a href="#contacto" aria-label="Contacto">Contacto</a></li>
         </ul>
     </nav>
     <header>
@@ -106,26 +119,26 @@
         <h1>Edgar Moya Coasaca</h1>
         <p>Estudiante Ing. de Sistemas | Técnico en Informática | Laboratorista de Suelos</p>
     </header>
-    <section id="about">
+    <section id="sobremí">
         <h2>Sobre mí</h2>
         <p>Soy un apasionado de la tecnología con experiencia en desarrollo web, gestión de bases de datos y soluciones innovadoras. Soy Técnico en Informática y actualmente estudio Ingeniería de Sistemas en la Universidad Continental. Además, me desempeño como laboratorista de suelos en la Obra Hidráulica Presa Los Loros, donde aplico mis conocimientos en tecnología y análisis de datos para optimizar procesos y mejorar la gestión geotécnica.</p>
     </section>
-    <section id="projects">
+    <section id="educacion">
         <h2>FORMACION EDUCATIVA</h2>
-        <div class="project">
+        <div class="proyectos">
             <h3>ING. DE SISTEMAS - UNIVERSIDAD CONTINENTAL</h3>
             <p>Actualmente estoy estudiando la carrera de Ing. de Sistemas en la Universidad Continental.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>TÉCNICO EN COMPUTACIÓN E INFORMÁTICA - I.E.S.T.P. "ANDRÉS A. CÁCERES D</h3>
             <p>Instalación, configuración y mantenimiento de hardware y software, la gestión de redes y sistemas operativos, la seguridad informática y el soporte técnico a usuarios.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>LABORATORISTA DE SUELOS - SENCICO</h3>
             <p>Responsable de analizar las propiedades físicas y mecánicas del suelo para garantizar su idoneidad en proyectos de construcción e infraestructura. </p>
         </div>
     </section>
-    <section id="skills">
+    <section id="habilidades">
         <h2>Habilidades</h2>
         <ul>
             <li>HTML, CSS, JavaScript</li>
@@ -135,39 +148,39 @@
             <li>Gestión de Bases de Datos</li>
         </ul>
     </section>
-    <section id="projects">
+    <section id="proyectos">
         <h2>EXPERIENCIA PROFESIONAL</h2>
-        <div class="project">
+        <div class="proyectos">
             <h3>OBRA HIDRAULICA - PRESA LOS LOROS</h3>
             <p>Como responsable del laboratorio de suelos en una obra hidráulica, mi labor consiste en la recopilación, análisis y gestión sistemática de datos geotécnicos para garantizar la estabilidad y seguridad de las estructuras. Utilizo herramientas digitales y bases de datos para el monitoreo en tiempo real de las características del suelo, asegurando que los parámetros cumplen con los estándares de calidad y normativas vigentes. Además, implemento modelos de simulación y reportes automatizados para optimizar la toma de decisiones en el proceso constructivo.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>UNNA INFRAESTRUCTURA</h3>
             <p>En una obra de infraestructura, la Ingeniería de Sistemas desempeña un papel clave en la gestión y optimización de procesos mediante la implementación de software especializado, sensores IoT y modelos de simulación. Esto permite el monitoreo en tiempo real del avance de la obra, la administración eficiente de recursos y la detección temprana de posibles riesgos. Asimismo, se desarrollan plataformas digitales para la recopilación y análisis de datos estructurales, facilitando la toma de decisiones estratégicas y asegurando el cumplimiento de normativas de calidad y seguridad.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>CONSORCIO CHINCHEROS - AEROPUERTO INTERNACIONAL</h3>
             <p>implementación de herramientas digitales para el monitoreo de avances, control de calidad del suelo y optimización del uso de maquinaria. Se emplean sensores IoT y sistemas GIS para registrar en tiempo real la compactación, nivelación y humedad del terreno, garantizando el cumplimiento de especificaciones técnicas. </p>
         </div>
     </section>
-    <section id="projects">
+    <section id="proyectos">
         <h2>CERTIFICACIONES</h2>
-        <div class="project">
+        <div class="proyectos">
             <h3>Seguridad y Salud en el Trabajo es la ISO 45001:2018</h3>
             <p>establece los requisitos para un sistema de gestión de la seguridad y salud ocupacional, ayudando a reducir riesgos laborales y mejorar el bienestar de los trabajadores.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>Microsoft Office Specialist (MOS) Excel Expert</h3>
             <p>habilidades avanzadas en el uso de Excel para análisis de datos, reportes y gestión de proyectos en construcción.</p>
         </div>
-        <div class="project">
+        <div class="proyectos">
             <h3>CompTIA Server+</h3>
             <p>valida conocimientos en administración, mantenimiento y solución de problemas en servidores y sistemas TI. </p>
         </div>
     </section>
-    <section id="contact">
+    <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: <a href="mailto:edgar.moya@example.com">edgar.moya@example.com</a></p>
+        <p>Email: <a href="mailto:anthonnymoya@gmail.com">anthonnymoya@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/anthonnymoya" target="_blank">Perfil de LinkedIn</a></p>
     </section>
     <footer>
